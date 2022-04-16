@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <style>
+         .method-nano h5 {
+         margin-top: 9px; 
+        }
+          body { font-family: 'roboto'; background:white; color:black;}
+        .html {
+          padding:15px;
+          overflow: hidden;
+          box-shadow: 0 0 15px grey;
+          -webkit-box-shadow: 0 0 15px #0000002e;
+          box-shadow: 0 0 15px #0000002e;
+          border-radius: 15px;
+        }
+
+        .container {
+            margin:0 auto; 
+            with:90%;
+            max-width:560px!important;
+        }
+        @font-face { font-family: 'roboto'; src: url('fonts/roboto-regular-webfont.woff2') format("woff2"); font-weight: normal; font-style: normal; } @font-face { font-family: 'roboto'; src: url('fonts/roboto-regular-webfont.woff2') format("woff2"); font-weight: normal; font-style: normal; } 
+      </style>
+      <link rel="stylesheet" href="bootstrap.min.css" />
+    </head>
+    <body>
+    <div id="app">
+      <div class="container">
+            <h3 style="margin-top:30px;margin-bottom:30px;">Get Access to Your Amazing Collection
+    </h3>
+
+    <div v-if="!viewDetails" style="font-size:15px;margin-bottom:8px;color:rgb(117, 128, 138)">
+    Choose a payment method
+    </div>
+
+    <div
+    v-if="viewDetails"
+    class="html"
+    style="background:white;color:black;padding:32px;"
+    >
+
+    <div style="text-align:center;margin-top:16px;">
+    <span>Your order number: <b style="background: #209ce9;color: white;padding: 5px 9px;border-radius: 50em;font-size: 13px;">NANO-69</b></span>
+    </div>
+
+    <h4 style=" margin-top: 40px;color:black; ">Step 1: Transfer
+    3.69963 NANO to our public address
+    </h4>
+    <span><b style="background:#209ce9;margin:4px;margin-top:16px;padding:16px 24px;border-radius:5px;color:white;display:block;word-break: break-all">nano_3boxqk5q56xsz8ufrw9srrz4pta6ffbkrg9j31aqziz8wtnr6j68ci7s4cnc</b></span><br />
+
+    <h4 style="color:black;">
+    Step 2: Send us your order number "NANO-69" via <a style="color:black;" href="mailto:thankyou@email.com">thankyou@email.com</a>
+    </h4>
+
+    <div style="margin-top:48px;margin-bottom:24px;" class="center">
+    <a style="color:black;font-size:15px;" href="https://nano.org">For more information please visit the Nano.org website</a>
+    </div>
+    </div>
+
+    <div class="html" v-if="!viewDetails">
+    <div class="row" style="padding:0 16px;">
+    <div class="col-md-7 method-nano">
+      <h5>Eco-Friendly Crypto</h5>
+    </div>
+
+    <div style="text-align:right;" class="col-md-5">
+
+                            <button @click="toggleViewDetails()" style="text-decoration:none!important;background:#209ce9;" class="btn btn-lg btn-secondary btn-block" to="/join/pay">
+                                 View details</button>
+    </div>
+    </div>
+    </div>
+
+    <div style="margin-top:80px;text-align:center;color:rgb(117, 128, 138);font-size:18px;">
+    +31612345678 · <a target="_blank" href="https://example.com/">example.com/</a> <br />
+    Our Address 31, 5555AB, CITY
+
+    </div>
+    </div>
+    <script src="vue.min.js"></script>
+    <script>
+      new Vue({
+      el: "#app",
+      data: {
+        viewDetails:false,
+      },
+      methods: {
+        toggleViewDetails() {
+                this.$data.viewDetails = true;
+            },
+      }
+    })
+      </script>
+    </body>
+</html>
