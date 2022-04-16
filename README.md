@@ -13,5 +13,5 @@ git clone https://github.com/neil-yoga/nano-checkout-vuejs-starter.html
 Snippets welcome for QR code and copy button.
 
 ### Nano?
-<a style="color:black;font-size:15px;" href="https://nano.org">Eco-Friendly, Zero Fees, Instant Payments</a>
+<a style="color:black;font-size:15px;" href="https://nano.org">Zero Fees, Eco-Friendly, Instant Payments</a>
 
